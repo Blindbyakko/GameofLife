@@ -1,0 +1,65 @@
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+The size of the board must be entered in some kind of input control.
+The user  will  have access to a  <pause/restart> button as well as  <stop> button. The <pause> button will toggle from pause to restart and back to pause each time the user clicks on it. The stop button will end the simulation.
+Provide a slider control to adjust the simulation speed. ( think timer event)
+The number of generations should be displayed on top of the board in real-time.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  
+    <!--<script src = "script.js" defer></script>-->
+    v<script src = "test.js" defer></script>
+  
+    <script src = "jquery-3.6.0.js"></script>
+  
+  <title>Game of Life</title>
+</head>
+<body>
+  <header>Game of life</header>
+  <div class = "input-container">
+    <p>Enter number of rows.</p>
+    <input type = "text" class = "rows">
+    </input>
+    <p>Enter number of columns.</p>
+    <input type = "text" class = "columns">
+    <button type = "button" class = "input-button">Enter</button>
+    </input>
+  </div>
+  <div class = "slider-container">
+    <label class = "slider-container">
+      <span>Frequency</span><br/>
+      <input type="range" class="time-slider" value="5" min="1" max="10" step="1" />
+      <span class="time-value"></span>
+    </label>
+    
+  </div>
+  <div class = "grid-container"></div>
+  <div class = "control-container">
+    <button type = button class = "start">&#9658; Start</button>
+    <button type = button class = "pause">&#8718; Pause</button>
+    <button type = button class = "next">Next &rarr;</button>
+    <button type = button class = "reset">Reset</button>
+    
+    
+  </div>
+
+  
+</body>
+</html> 
+ <!--
+    <div class = "grid-container" data-id = "2"></div>
+
+    <button type = button class = "pause">&#8718; Pause</button>
+    <button type = button class = "next">Next &rarr;</button>
+    <button type = button class = "reset">Reset</button>
+-->
